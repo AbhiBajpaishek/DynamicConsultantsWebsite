@@ -21,10 +21,10 @@
             <ul class="topnav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="/AdminRegistration">Registration</a></li>
-                <li><a href="/ChangePassword">Change Password</a></li>
+                <li><a href="/AdminRegistration.aspx">Registration</a></li>
+                <li><a href="/ChangePassword.aspx">Change Password</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><a href="/Login.aspx">Log Out</a></li>
             </ul>
         </div>
     </div>

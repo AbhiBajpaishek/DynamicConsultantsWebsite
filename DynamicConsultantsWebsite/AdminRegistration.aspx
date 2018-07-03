@@ -20,12 +20,12 @@
                 </tr>
                 <tr>
                     <td><asp:Label ID="lblPassword" runat="server">Enter Password</asp:Label></td>
-                    <td><asp:TextBox ID="txtPassword" runat="server" CssClass="textBox"></asp:TextBox></td>
+                    <td><asp:TextBox ID="txtPassword" runat="server" CssClass="textBox" TextMode="Password"></asp:TextBox></td>
                     <td><asp:Label ID="lblPasswordError" runat="server"></asp:Label></td>
                 </tr>
                 <tr>
                     <td><asp:Label ID="lblRePassword" runat="server">Re-enter Password</asp:Label></td>
-                    <td><asp:TextBox ID="txtRePassword" runat="server" CssClass="textBox"></asp:TextBox></td>
+                    <td><asp:TextBox ID="txtRePassword" runat="server" CssClass="textBox" TextMode="Password"></asp:TextBox></td>
                     <td><asp:Label ID="lblRePasswordError" runat="server"></asp:Label></td>
                 </tr>
 

@@ -12,18 +12,16 @@
 <body>
     <form id="form1" runat="server">
         <div id="mainDiv">
-          <font size="18px">  <marquee>Welcome to Dynamic Consultants</marquee>
-            </font>
+            <center><img src="Images/DECLogo.png" /></center>
               <div id="loginPanelDiv">
                 <br />
                 <br />
                     <asp:TextBox ID="txtUser" runat="server" placeholder="Enter Username" CssClass="textBox"></asp:TextBox>
                     <br /><br />
-                    <asp:TextBox ID="txtPassword" runat="server" placeholder="Enter Password" CssClass="textBox"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" runat="server" placeholder="Enter Password" CssClass="textBox" TextMode="Password"></asp:TextBox>
 
                   <asp:Label ID="lblError" runat="server" ForeColor="White" ></asp:Label>
                     <br />
-
                   <br />
                     <asp:Button ID="btnLogin" runat="server" CssClass="btn" Text="Log In" OnClick="btnLogin_Click" />
                     <br />
