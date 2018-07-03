@@ -1,0 +1,49 @@
+﻿#masterDiv {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+#childDiv {
+    height: 1200px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+#iconImage {
+    height: 75px;
+    width: 150px;
+    margin: 2px 2px 2px 2px;
+    float: left;
+}
+
+#menuDiv {
+    height: 75px;
+    float: right;
+    width: 900px;
+}
+
+#menuDiv ul {
+    list-style-type: none;
+}
+
+#menuDiv li {
+   float: left;
+    }
+
+
+ #menuDiv li a {
+     display: block;
+     text-decoration: none;
+     text-align: center;
+     color: black;
+     padding: 14px 16px;
+     font-size: 20px;
+}
+
+#menuDiv li a:hover {
+   background-color: blueviolet;
+   color: white;
+}

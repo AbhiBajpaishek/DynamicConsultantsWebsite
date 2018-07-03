@@ -1,0 +1,33 @@
+﻿#mainPanel{
+    height:800px;
+    width:100%;
+    background-color:dodgerblue;
+    overflow:auto;
+}
+
+#registrationFormDiv{
+    height:450px;
+    width:800px;
+    border:1px solid black;
+    border-style:groove;
+    margin-top:100px;
+    margin-left:250px;
+}
+
+td{
+    width:85px;
+    padding:5px 5px 5px 5px;
+}
+
+#dataGrid {
+    border:1px solid red;
+    min-height: 400px;
+    width: 100%;
+    background-color:yellow;
+}
+
+#registeredDataGridView{
+    margin-left:200px;
+}
+
+

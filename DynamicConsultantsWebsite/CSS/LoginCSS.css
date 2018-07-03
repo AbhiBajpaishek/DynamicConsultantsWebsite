@@ -1,0 +1,35 @@
+﻿#mainDiv{
+    height:800px;
+    width:100%;
+    background-color:deepskyblue;
+    overflow:auto;
+}
+
+
+#loginPanelDiv{
+    min-height:300px;
+    width:500px;
+    background-color:black;
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:220px;
+}
+
+.textBox{
+    width:200px;
+    height:25px;
+    margin-top:25px;
+    margin-left:130px;
+    padding:2px 2px 2px 2px;
+}
+
+
+.btn{
+    height:30px;
+    width:100px;
+    background-color:ButtonFace;
+    margin-left:170px;
+    margin-top:30px;
+    padding:2px 2px 2px 2px;
+}
