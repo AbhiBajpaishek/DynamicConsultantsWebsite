@@ -6,17 +6,25 @@
 }
 
 #registrationFormDiv{
-    height:450px;
-    width:800px;
+    min-height:450px;
+    min-width:800px;
     border:1px solid black;
-    border-style:groove;
+    border-style:none;
     margin-top:100px;
     margin-left:250px;
 }
 
+
 td{
-    width:85px;
+    width:185px;
     padding:5px 5px 5px 5px;
+    margin-left:50px;
+}
+
+.txtBox{
+    width:150px;
+    height:25px;
+    color:white;
 }
 
 #dataGrid {

@@ -129,5 +129,7 @@ public partial class AdminRegistration : System.Web.UI.Page
         else
             genderList.SelectedIndex = 1;
         ageDropDown.SelectedValue = dt.Rows[e.NewEditIndex][3].ToString();
+        registeredDataGridView.DataBind();
+
     }
 }

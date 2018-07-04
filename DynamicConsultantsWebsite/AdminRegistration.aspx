@@ -2,37 +2,37 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <link href="CSS/adminRegistrationCSS.css" rel="stylesheet" />
-    <link href="CSS/LoginCSS.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="childCPH" Runat="Server">
     <div id="mainPanel">
         <div id="registrationFormDiv">
             <table runat="server">
                 <tr>
-                    <td><asp:Label ID="lblName" runat="server">Name</asp:Label></td>
-                    <td><asp:TextBox ID="txtName" runat="server" CssClass="textBox"></asp:TextBox></td>
-                    <td><asp:Label ID="lblNameError" runat="server"></asp:Label></td>
+                    <td colspan="2"><asp:Label ID="lblName" runat="server">Name</asp:Label></td>
+                    <td><asp:TextBox ID="txtName" runat="server" CssClass="txtBox"></asp:TextBox></td>
+                    <td><asp:Label ID="lblNameError" runat="server" ForeColor="Red"></asp:Label></td>
                 </tr>
                 <tr>
                     <td><asp:Label ID="lblmail" runat="server">Enter E-mail</asp:Label></td>
                     <td><asp:TextBox ID="txtMail" runat="server" CssClass="textBox"></asp:TextBox></td>
-                    <td><asp:Label ID="lblMailError" runat="server"></asp:Label></td>
+                    <td><asp:Label ID="lblMailError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
                 <tr>
                     <td><asp:Label ID="lblPassword" runat="server">Enter Password</asp:Label></td>
                     <td><asp:TextBox ID="txtPassword" runat="server" CssClass="textBox" TextMode="Password"></asp:TextBox></td>
-                    <td><asp:Label ID="lblPasswordError" runat="server"></asp:Label></td>
+                    <td><asp:Label ID="lblPasswordError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
                 <tr>
                     <td><asp:Label ID="lblRePassword" runat="server">Re-enter Password</asp:Label></td>
                     <td><asp:TextBox ID="txtRePassword" runat="server" CssClass="textBox" TextMode="Password"></asp:TextBox></td>
-                    <td><asp:Label ID="lblRePasswordError" runat="server"></asp:Label></td>
+                    <td><asp:Label ID="lblRePasswordError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
 
                 <tr>
                     <td><asp:Label ID="lblAge" runat="server">Enter Age</asp:Label></td>
                     <td><asp:DropDownList ID="ageDropDown" runat="server"></asp:DropDownList></td>
-                    <td><asp:Label ID="lblAgeError" runat="server"></asp:Label></td>
+                    <td><asp:Label ID="lblAgeError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
 
                 <tr>
@@ -43,7 +43,7 @@
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
-                    <td><asp:Label ID="lblGenderError" runat="server"></asp:Label></td>
+                    <td><asp:Label ID="lblGenderError" runat="server" ForeColor="Red"></asp:Label></td>
                 </tr>
 
                 <tr>

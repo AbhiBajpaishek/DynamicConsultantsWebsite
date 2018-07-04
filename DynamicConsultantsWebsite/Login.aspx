@@ -19,7 +19,6 @@
                     <asp:TextBox ID="txtUser" runat="server" placeholder="Enter Username" CssClass="textBox"></asp:TextBox>
                     <br /><br />
                     <asp:TextBox ID="txtPassword" runat="server" placeholder="Enter Password" CssClass="textBox" TextMode="Password"></asp:TextBox>
-
                   <asp:Label ID="lblError" runat="server" ForeColor="White" ></asp:Label>
                     <br />
                   <br />
