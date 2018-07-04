@@ -7,47 +7,52 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="childCPH" Runat="Server">
     <div id="mainPanel">
         <div id="registrationFormDiv">
-            <table runat="server">
+            <table runat="server" id="tableForm">
                 <tr>
                     <td colspan="2"><asp:Label ID="lblName" runat="server">Name</asp:Label></td>
                     <td><asp:TextBox ID="txtName" runat="server" CssClass="txtBox"></asp:TextBox></td>
                     <td><asp:Label ID="lblNameError" runat="server" ForeColor="Red"></asp:Label></td>
                 </tr>
                 <tr>
-                    <td><asp:Label ID="lblmail" runat="server">Enter E-mail</asp:Label></td>
-                    <td><asp:TextBox ID="txtMail" runat="server" CssClass="textBox"></asp:TextBox></td>
+                    <td colspan="2"><asp:Label ID="lblmail" runat="server">Enter E-mail</asp:Label></td>
+                    <td><asp:TextBox ID="txtMail" runat="server" CssClass="txtBox"></asp:TextBox></td>
                     <td><asp:Label ID="lblMailError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
                 <tr>
-                    <td><asp:Label ID="lblPassword" runat="server">Enter Password</asp:Label></td>
-                    <td><asp:TextBox ID="txtPassword" runat="server" CssClass="textBox" TextMode="Password"></asp:TextBox></td>
+                    <td colspan="2"><asp:Label ID="lblPassword" runat="server">Enter Password</asp:Label></td>
+                    <td><asp:TextBox ID="txtPassword" runat="server" CssClass="txtBox" TextMode="Password"></asp:TextBox></td>
                     <td><asp:Label ID="lblPasswordError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
                 <tr>
-                    <td><asp:Label ID="lblRePassword" runat="server">Re-enter Password</asp:Label></td>
-                    <td><asp:TextBox ID="txtRePassword" runat="server" CssClass="textBox" TextMode="Password"></asp:TextBox></td>
+                    <td colspan="2"><asp:Label ID="lblRePassword" runat="server">Re-enter Password</asp:Label></td>
+                    <td><asp:TextBox ID="txtRePassword" runat="server" CssClass="txtBox" TextMode="Password"></asp:TextBox></td>
                     <td><asp:Label ID="lblRePasswordError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
 
                 <tr>
-                    <td><asp:Label ID="lblAge" runat="server">Enter Age</asp:Label></td>
+                    <td colspan="2"><asp:Label ID="lblAge" runat="server">Enter Age</asp:Label></td>
                     <td><asp:DropDownList ID="ageDropDown" runat="server"></asp:DropDownList></td>
                     <td><asp:Label ID="lblAgeError" runat="server"  ForeColor="Red"></asp:Label></td>
                 </tr>
 
                 <tr>
-                    <td><asp:Label ID="lblGender" runat="server">Select Gender</asp:Label></td>
+                    <td colspan="2"><asp:Label ID="lblGender" runat="server">Select Gender</asp:Label></td>
                     <td>
                         <asp:RadioButtonList ID="genderList" runat="server" RepeatDirection="Horizontal">
-                            <asp:ListItem> Male</asp:ListItem>
+                            <asp:ListItem>Male</asp:ListItem>
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
                     <td><asp:Label ID="lblGenderError" runat="server" ForeColor="Red"></asp:Label></td>
                 </tr>
-
                 <tr>
-                    <td><asp:Button ID="btnRegister" runat="server" Text="Register/Update" CssClass="btn" OnClick="btnRegister_Click" /></td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <br />
+                <tr>
+                    <th><asp:Button ID="btnRegister" runat="server" Text="Register/Update" CssClass="btn" OnClick="btnRegister_Click" /></th>
                 </tr>
             </table>
         </div>

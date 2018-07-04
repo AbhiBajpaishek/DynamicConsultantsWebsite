@@ -14,6 +14,10 @@
     margin-left:250px;
 }
 
+table#tableForm{
+    margin-left:250px;
+}
+
 
 td{
     width:185px;
@@ -22,9 +26,9 @@ td{
 }
 
 .txtBox{
-    width:150px;
+    width:180px;
     height:25px;
-    color:white;
+    color:black;
 }
 
 #dataGrid {
@@ -36,6 +40,12 @@ td{
 
 #registeredDataGridView{
     margin-left:200px;
+}
+
+.btn{
+    height:30px;
+    width:180px;
+    margin-left:150px;
 }
 
 

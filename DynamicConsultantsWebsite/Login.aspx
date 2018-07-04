@@ -24,7 +24,6 @@
                   <br />
                     <asp:Button ID="btnLogin" runat="server" CssClass="btn" Text="Log In" OnClick="btnLogin_Click" />
                     <br />
-
             </div>
         </div>
     </form>

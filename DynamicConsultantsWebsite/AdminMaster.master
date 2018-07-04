@@ -28,7 +28,6 @@
             </ul>
         </div>
     </div>
-
         <asp:ContentPlaceHolder id="childCPH" runat="server">
         </asp:ContentPlaceHolder>
     </div>

@@ -26,30 +26,35 @@ public partial class ChangePassword : System.Web.UI.Page
     {
         DBA db = new DBA();
         DataTable dt = db.ReadBulkData("select Username, Password from Tbl_Login where Username='" + txtUser.Text + "'");
-        if (dt.Rows.Count > 0 && dt.Rows[0][0].ToString() == txtUser.Text && dt.Rows[0][1].ToString() == txtOldPassword.Text)
+        if (txtUser.Text != "")
         {
-            if (txtOldPassword.Text != ""||txtNewPassword.Text!="")
+            if (txtOldPassword.Text != "" && txtNewPassword.Text != "")
             {
-                if (validationCheck(txtNewPassword.Text, txtReNewPassword.Text))
+                if (dt.Rows.Count > 0 && dt.Rows[0][0].ToString() == txtUser.Text && dt.Rows[0][1].ToString() == txtOldPassword.Text)
                 {
-                    if (db.InsertUpdateDelete("update Tbl_login SET Password = '" + txtNewPassword.Text + "' where Username= '" + txtUser.Text + "';"))
+                    if (validationCheck(txtNewPassword.Text, txtReNewPassword.Text))
                     {
-                        Console.Write("Password Changed Succesfully");
-                        clearFields();
-                    }
+                        if (db.InsertUpdateDelete("update Tbl_login SET Password = '" + txtNewPassword.Text + "' where Username= '" + txtUser.Text + "';"))
+                        {
+                            Response.Write("<script>alert('Password Changed Succesfully')</script>");
+                            clearFields();
+                        }
 
+                        else
+                            Response.Write("<script>alert('Some Error Occurred')</script>");
+                    }
                     else
-                        Console.Write("Some Error Occurred");
+                        lblError.Text = "Passwords didn't match";
                 }
                 else
-                    Console.Write("Passwords didn't match");
+                  Response.Write("<script>alert('Invalid Credentials')</script>");
             }
             else
-                Console.Write("Please Enter Missing Fields");
-
+            lblOldPassError.Text = "Please Enter Missing Fields";
         }
         else
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "Alert", "Invalid Credentials", true); 
+            lblUsernameError.Text = "Please Enter Username";
+       
 
     }
 
@@ -70,6 +75,9 @@ public partial class ChangePassword : System.Web.UI.Page
         txtOldPassword.Text = "";
         txtNewPassword.Text = "";
         txtReNewPassword.Text = "";
+        lblError.Text = "";
+        lblOldPassError.Text = "";
+        lblUsernameError.Text = "";
     }
 
     protected void showHidePassword_CheckedChanged(object sender, EventArgs e)

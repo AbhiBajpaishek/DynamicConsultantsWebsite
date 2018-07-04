@@ -9,6 +9,10 @@ public partial class AdminMaster : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        //new DBA().ReadBulkData("select * from Tbl_Registration where Status='Active';");
+        //if(Session["uid"]==null)
+        //{
+        //    Response.Redirect("/Login.aspx");
+        //    Response.Write("<script>alert('Please Login to Continue')</script>");
+        //}
     }
 }
